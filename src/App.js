@@ -17,13 +17,17 @@ class App extends Component {
       }`
     )
       .then(res => res.json())
-      .then(books => this.setState({ books: books.items }));
+      .then(books => {
+            console.log(books);
+            this.setState({ books: books.items })
+          }
+        );
   };
   render() {
     return (
       <div className="App">
         <Header />
-        <SearchForm />
+        <SearchForm handleSearchSubmit={this.handleSearchSubmit}/>
         <BookList books={this.state.books} />
       </div>
     );
