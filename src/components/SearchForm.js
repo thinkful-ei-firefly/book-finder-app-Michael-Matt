@@ -69,7 +69,9 @@ class SearchForm extends React.Component {
             </label>
           </div>
 
-          <button className="form__button">Search</button>
+          <button disabled={!this.state.text} className="form__button">
+            Search
+          </button>
         </form>
       </div>
     );
