@@ -1,0 +1,15 @@
+.book {
+  display: flex;
+  margin-top: 5rem;
+  text-align: left;
+}
+.book__image {
+  display: inline-block;
+
+  flex-basis: 1;
+}
+
+.book__info {
+  flex-basis: 3;
+  margin-left: 2rem;
+}
